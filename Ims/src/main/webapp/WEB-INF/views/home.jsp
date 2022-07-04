@@ -10,11 +10,17 @@
 
 <h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 ㅇㄴㅁㅇㅁㅇ
 하이요123213ㅈㅈㅈ
 =======
 
 	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ 아안ㄹㅇㅎㄴㅇㅀㄴㅇㄱㅀㄹ 1234265
+=======
+
+***
+	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ 아안ㄹㅇㅎㄴㅇㅀㄴㅇㄱㅀㄹ 1234265 
+>>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
 	^^
 
 >>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
