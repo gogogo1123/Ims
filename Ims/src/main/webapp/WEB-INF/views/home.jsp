@@ -11,7 +11,7 @@
 <h1>
 
 ㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇ
-	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ
+	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋㄴㄴㄴㄴㄴ
 	^^ㅁㄴㅇㄴㅁㅇㄴㅁㅇ
 
 >>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
