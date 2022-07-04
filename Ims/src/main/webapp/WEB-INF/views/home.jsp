@@ -9,11 +9,21 @@
 <body>
 
 <h1>
+<<<<<<< HEAD
 
 ***
 	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ 아안ㄹㅇㅎㄴㅇㅀㄴㅇㄱㅀㄹ 1234265 
+=======
+<<<<<<< HEAD
+ㅇㄴㅁㅇㅁㅇ
+하이요123213ㅈㅈㅈ
+=======
+
+	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ 아안ㄹㅇㅎㄴㅇㅀㄴㅇㄱㅀㄹ 1234265
+>>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
 	^^
 
+>>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
 >>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
 </h1>
 
