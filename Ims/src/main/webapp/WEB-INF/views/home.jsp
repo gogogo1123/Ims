@@ -9,8 +9,17 @@
 <body>
 
 <h1>
+<<<<<<< HEAD
 ㅇㄴㅁㅇㅁㅇ
 하이요123213
+=======
+
+ㅇㄹㄴㄹㄴㄹㅇㅁㄴㅇ
+	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ 아안ㄹㅇㅎㄴㅇㅀㄴㅇㄱㅀㄹ 1234265
+	^^
+
+>>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
+>>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
