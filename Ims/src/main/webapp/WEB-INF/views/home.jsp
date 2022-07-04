@@ -10,8 +10,11 @@
 
 <h1>
 
+
 	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ
-	
+	^^
+
+>>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
