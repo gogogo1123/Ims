@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-ㅇㄴㅇㅁㅇㅁㄴㅇㄴㅁㄴㅇㅁㅇㅁㄴㅇ
-</body>ㅁㄴ
-</html>ㅇㄴ
+
+</body>
+</html>
