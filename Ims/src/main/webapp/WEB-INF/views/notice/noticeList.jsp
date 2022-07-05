@@ -1,17 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../resources/css/bootstrap.css">
-<link rel="stylesheet" href="../../resources/css/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" href="../../resources/css/elegant-icons.css" type="text/css">
-<link rel="stylesheet" href="../../resources/css/nice-select.css" type="text/css">
-<link rel="stylesheet" href="../../resources/css/jquery-ui.min.css" type="text/css">
-<link rel="stylesheet" href="../../resources/css/owl.carousel.min.css" type="text/css">
-<link rel="stylesheet" href="../../resources/css/slicknav.min.css" type="text/css">
-<link rel="stylesheet" href="../../resources/css/style.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" type="text/css">
 <script src="https://kit.fontawesome.com/ea9f50e12b.js" crossorigin="anonymous"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <title>Notice</title>
@@ -123,7 +124,7 @@
 		</div>
 	</div>
 	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-		<button class="btn btn-dark me-md-2" type="button" onclick="location.href='noticeWrite.jsp'">글쓰기</button>
+		<button class="btn btn-dark me-md-2" type="button" onclick="location.href='${pageContext.request.contextPath}/nWrite.do'">글쓰기</button>
 	</div>
 	
 	<table class="table">
