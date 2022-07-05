@@ -9,24 +9,14 @@
 <body>
 
 <h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-ㅇㄴㅁㅇㅁㅇ
-하이요123213ㅈㅈㅈ
-=======
-
-	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ 아안ㄹㅇㅎㄴㅇㅀㄴㅇㄱㅀㄹ 1234265
-=======
-
-***
-	Hello world!  아안녕ㅋㅋㅋㅋㅋㅋ 아안ㄹㅇㅎㄴㅇㅀㄴㅇㄱㅀㄹ 1234265 
->>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
-	^^
-
->>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
->>>>>>> branch 'master' of https://github.com/gogogo1123/Ims.git
+	Hello world! 안녕
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+
+<a href="${pageContext.request.contextPath}/noticeList.do">공지사항</a>
+<a href="notice/noticeList.jsp">공지사항</a>
+<a href="${pageContext.request.contextPath}/noticeWrite.do"></a>
+<a href="${pageContext.request.contextPath}/noticeDelete.do">공지삭제</a>
 </body>
 </html>
