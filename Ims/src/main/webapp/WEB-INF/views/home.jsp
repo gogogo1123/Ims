@@ -15,8 +15,5 @@
 <P>  The time on the server is ${serverTime}. </P>
 
 <a href="${pageContext.request.contextPath}/noticeList.do">공지사항</a>
-<a href="notice/noticeList.jsp">공지사항</a>
-<a href="${pageContext.request.contextPath}/noticeWrite.do"></a>
-<a href="${pageContext.request.contextPath}/noticeDelete.do">공지삭제</a>
 </body>
 </html>

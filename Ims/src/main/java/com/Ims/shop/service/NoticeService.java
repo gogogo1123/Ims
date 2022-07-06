@@ -33,4 +33,19 @@ public class NoticeService {
 		
 		return noticeDao.getNoticeList();
 	}
+	
+	//글상세페이지보기
+	public NoticeVo getNoticeView(NoticeVo noticeVo) {
+		return noticeDao.getNoticeView(noticeVo);
+	}
+	
+	//글수정
+	public int getNoticeModify(NoticeVo noticeVo) {
+		int result = 0;
+		
+		result = noticeDao.getNoticeModify(noticeVo);
+		
+		return result;
+		
+	}
 }

@@ -11,16 +11,9 @@ public class NoticeVo {
 	private String n_delyn;
 	private String n_origin_filename;
 	private String n_system_filename;
-	private int member_idx;
 	private int ct_idx;
-	private String member_id;
+	private String member_name;
 	
-	public String getMember_id() {
-		return member_id;
-	}
-	public void setMember_id(String member_id) {
-		this.member_id = member_id;
-	}
 	public int getN_bidx() {
 		return n_bidx;
 	}
@@ -63,18 +56,19 @@ public class NoticeVo {
 	public void setN_system_filename(String n_system_filename) {
 		this.n_system_filename = n_system_filename;
 	}
-	public int getMember_idx() {
-		return member_idx;
-	}
-	public void setMember_idx(int member_idx) {
-		this.member_idx = member_idx;
-	}
 	public int getCt_idx() {
 		return ct_idx;
 	}
 	public void setCt_idx(int ct_idx) {
 		this.ct_idx = ct_idx;
 	}
+	public String getMember_name() {
+		return member_name;
+	}
+	public void setMember_name(String member_name) {
+		this.member_name = member_name;
+	}
+	
 	
 	
 }
