@@ -3,7 +3,7 @@ pageEncoding="UTF-8"%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<a href="/shop/upload/input.do">업로드 테스트</a> |
+
 <a href="/shop/shop/product/list.do">상품리스트</a>
 
 <div style="text-align:right;">
