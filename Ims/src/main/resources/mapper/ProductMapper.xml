@@ -20,6 +20,38 @@ select * from product order by product_name
 
 
 </select>	
+
+
+<select id="detail" resultType="com.Ims.shop.vo.ProductVo">
+
+select * from product where product_code = #{product_code}
+
+</select>
+	
+	
+	<update id="update">
+	
+	update product set product_name=#{product_name},quantity=#{quantity},price=#{price},filename=#{filename},fee=#{fee},out_put=#{out_put},brand=#{brand},gender=#{gender},size=#{size},color=#{color},purpose=#{purpose} where product_code=#{product_code}
+	
+	
+	</update>
+	
+	
+	<select id="file_info" resultType="String">
+	select filename from product
+where product_code=#{product_code}
+	
+	</select>
+	
+	
+	<delete id="delete">
+
+delete from product where product_code=#{product_code}
+
+
+</delete>
+	
+	
 	
 	
 </mapper>

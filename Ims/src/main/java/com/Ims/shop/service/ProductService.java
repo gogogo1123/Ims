@@ -31,4 +31,21 @@ public class ProductService {
 		return productDao.list();
 	}
 	
+	
+	public ProductVo detail(int product_code) {
+		return productDao.detail(product_code);
+	}
+	
+	public void update(ProductVo vo) {
+		productDao.update(vo);
+	}
+	
+	
+	public String file_info(int product_code) {
+		return productDao.file_info(product_code);
+	}
+	
+	public void delete(Integer product_code) {
+		productDao.delete(product_code);
+	}
 }
