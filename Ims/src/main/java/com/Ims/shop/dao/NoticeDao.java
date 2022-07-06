@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.Ims.shop.vo.NoticeVo;
 
+
 @Repository
 public class NoticeDao {
 	
@@ -30,11 +31,11 @@ public class NoticeDao {
 		return sqlSession.selectList(MAPPER+".getNoticeList");		
 	}
 
-	public NoticeVo getNoticeView(NoticeVo noticeVo) {
-		return sqlSession.selectOne(MAPPER+".getNoticeView", noticeVo);
+	public NoticeVo getNoticeView(int n_bidx) {
+		return sqlSession.selectOne(MAPPER+".getNoticeView", n_bidx);
 	}
 
-	public int getNoticeModify(NoticeVo noticeVo) {
-		return sqlSession.update(MAPPER+".getNoticeModify", noticeVo);
+	public int getNoticeModify(int n_bidx) {
+		return sqlSession.update(MAPPER+".getNoticeModify", n_bidx);
 	}
 }

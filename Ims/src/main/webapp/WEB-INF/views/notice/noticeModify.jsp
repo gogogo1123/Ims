@@ -55,7 +55,7 @@
 </script>
 </head>
 <body class="text-center">
-	<form class="form-data" id="form" action="${pageContext.request.contextPath}/noticeModifyProcess.do" method="post">
+	<form class="form-data" id="form" action="<c:url value='${pageContext.request.contextPath}/noticeModifyProcess.do>'" method="post">
 		<input type="hidden" name="n_bidx" value="${noticeModify.n_bidx}">
 		<div class="py-3"></div><!-- padding y축 공백 -->
 		<div class="h2">로고</div>
@@ -102,7 +102,7 @@
 		</div>
 		
 		<div class="pt-1 text-right">
-		
+			<input type="hidden" value="${noticeModify.n_bidx}" name="n_bidx"> 
 			<input id="btn-outline-secondary" class="btn btn-outline-secondary" type="submit" value="글작성"/>
 			
 			<input id="btn-outline-secondary" class="btn btn-outline-secondary" type="button" value="돌아가기" onclick="location.href='${pageContext.request.contextPath}/noticeList.do'"/>

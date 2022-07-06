@@ -44,17 +44,13 @@
 			<tr>
 				<td>${noticeView.n_content}</td>
 			</tr>
-		</table>
-		<table class="table">
 			<tr>
 				<td>
 				<!-- ?n_bidx=${noticeView.n_bidx} -->
-				<!-- 
-				<input class="bbtn btn-outline-secondary" type="submit" value="수정하기" onclick="${pageContext.request.contextPath}/noticeModify.do?n_bidx=${noticeView.n_bidx}"/>
-				 --> 
-				 <input type="hidden" value="${noticeView.n_bidx}" name="n_bidx"> 
-				 <input type="button" class="bbtn btn-outline-secondary" value="수정하기" onclick="location.href='${pageContext.request.contextPath}/noticeModify.do'">
-				<input class="bbtn btn-outline-secondary" type="submit" value="목록으로" onclick="location.href='${pageContext.request.contextPath}/noticeList.do'"></td>
+				<a class="btn btn-outline-secondary" href="<c:url value='/noticeModify.do?n_bidx=${noticeView.n_bidx}'/>">수정하기</a>
+				<a class="btn btn-outline-secondary" href="<c:url value='/noticeList.do'/>">돌아가기</a>
+				<a class="btn btn-outline-secondary" href="<c:url value='/'/>">HOME</a>
+				</td>
 			</tr>
 		</table>
 </div>
