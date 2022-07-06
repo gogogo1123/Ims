@@ -7,7 +7,7 @@
 	<title>Home</title>
 </head>
 <body>
-
+<%@ include file="include/menu.jsp" %>
 <h1>
 	Hello world! 안녕
 </h1>
