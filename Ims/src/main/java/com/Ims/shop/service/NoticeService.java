@@ -35,17 +35,20 @@ public class NoticeService {
 	}
 	
 	//글상세페이지보기
-	public NoticeVo getNoticeView(NoticeVo noticeVo) {
-		return noticeDao.getNoticeView(noticeVo);
+	public NoticeVo getNoticeView(Integer n_bidx) {
+		return noticeDao.getNoticeView(n_bidx);
 	}
 	
 	//글수정
-	public int getNoticeModify(NoticeVo noticeVo) {
-		int result = 0;
+	public NoticeVo getNoticeModify(int n_bidx) {
+	
 		
-		result = noticeDao.getNoticeModify(noticeVo);
+		return noticeDao.getNoticeModify(n_bidx);
 		
-		return result;
-		
+	}
+
+	public int getNoticeModifyProcess(NoticeVo noticeVo) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
