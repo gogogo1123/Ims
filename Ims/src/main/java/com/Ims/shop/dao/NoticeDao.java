@@ -38,4 +38,5 @@ public class NoticeDao {
 	public int getNoticeModify(int n_bidx) {
 		return sqlSession.update(MAPPER+".getNoticeModify", n_bidx);
 	}
+	
 }

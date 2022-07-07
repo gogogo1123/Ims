@@ -29,7 +29,8 @@ public class NoticeController {
 
 //	@RequestMapping("/noticeList") 
 	
-	  @GetMapping("/noticeList.do") public String getNoticeList(Model model, HttpSession session) {
+	  @GetMapping("/noticeList.do") 
+	  public String getNoticeList(Model model, HttpSession session) {
 	 
 	  // String member_idx = (String) session.getAttribute("member_idx");
 	  
@@ -89,7 +90,7 @@ public class NoticeController {
 	}
 
 	@RequestMapping("/noticeModify.do")
-	public String noticeModify(@PathVariable("n_bidx") int n_bidx, Model model, NoticeVo noticeVo) {
+	public String getnoticeModify(@PathVariable("n_bidx") int n_bidx, Model model, NoticeVo noticeVo) {
 
 		model.addAttribute("noticeModify", noticeService.getNoticeModify(n_bidx));
 
