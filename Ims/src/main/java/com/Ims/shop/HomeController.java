@@ -52,4 +52,13 @@ public class HomeController {
 			
 			return "NewFile";
 }
+		
+		
+		
+		@RequestMapping("/cartlist")
+		public String cart() {
+			return "shop/cartlist";
+		}
+		
+		
 }
