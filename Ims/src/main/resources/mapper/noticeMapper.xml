@@ -46,9 +46,9 @@
 	</select>
 	
 	
-	<select id="getnoticeModify" resultType="noticeVo">
+	<select id="getnoticeModify" resultType="noticeVo" parameterType="int">
 		<![CDATA[
-		select n_title, n_content, member_name, n_bidx from b_notice where n_bidx=#{n_bidx}
+		select * from b_notice where n_bidx=#{n_bidx}
 		]]>	
 	</select>
 	

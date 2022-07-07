@@ -35,8 +35,8 @@ public class NoticeDao {
 		return sqlSession.selectOne(MAPPER+".getNoticeView", n_bidx);
 	}
 
-	public int getNoticeModify(int n_bidx) {
-		return sqlSession.update(MAPPER+".getNoticeModify", n_bidx);
+	public NoticeVo getNoticeModify(int n_bidx) {
+		return sqlSession.selectOne(MAPPER+".getNoticeModify", n_bidx);
 	}
 	
 }

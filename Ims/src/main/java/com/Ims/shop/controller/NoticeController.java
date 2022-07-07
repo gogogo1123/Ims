@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.Ims.shop.service.NoticeService;
 import com.Ims.shop.vo.NoticeVo;
@@ -90,12 +91,24 @@ public class NoticeController {
 	}
 
 	@RequestMapping("/noticeModify.do")
-	public String getnoticeModify(@PathVariable("n_bidx") int n_bidx, Model model, NoticeVo noticeVo) {
+	public String getnoticeModify(int n_bidx, Model model) {
 
-		model.addAttribute("noticeModify", noticeService.getNoticeModify(n_bidx));
+		model.addAttribute("noticeView", noticeService.getNoticeModify(n_bidx));
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>getnoticeModify<<<<<<<<<<<<<<<<<<<<<<<<<<<<" +n_bidx);
+		/*
+		 * mav.setViewName("notice/notice"); mav.addObject("noticeModify",
+		 * noticeService.getNoticeModify(n_bidx));
+		 */
+	
 
 		return "notice/noticeModify";
 	}
+	
+	/*
+	 * @RequestMapping("/notice.do") public String notice() { return
+	 * "notice/notice"; }
+	 */
+	
 
 	@RequestMapping("/noticeModifyProcess.do")
 	public String getNoticeModifyProcess(NoticeVo noticeVo) {
