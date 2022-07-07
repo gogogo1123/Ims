@@ -49,8 +49,4 @@ public class NoticeService {
 		
 	}
 
-	public int getNoticeModifyProcess(NoticeVo noticeVo) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }

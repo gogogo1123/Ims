@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +26,16 @@
 	<script src="<c:url value="${pageContext.request.contextPath}/resources/js/morris-data.js" />"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
-	
+	/* 
+	function ConvertSystemSourcetoHtml(str){
+		str = str.replace(/</g,"&lt;");
+		str = str.replace(/>/g,"&gt;");
+		str = str.replace(/\/g,"&quot;");
+		str = str.replace(/\/g,"&#39;");
+		str = str.replace(/\n/g,"<br />");
+		return str;
+		}
+	 */
 	</script>
 </head>
 <body class="text-center">
@@ -42,7 +57,9 @@
 				<td>${noticeView.n_title}</td>
 			</tr>
 			<tr>
-				<td>${noticeView.n_content}</td>
+				<td>
+				<textarea rows="20" cols="100" required="required" readonly="readonly">${noticeView.n_content}</textarea>
+				</td>
 			</tr>
 			<tr>
 				<td>

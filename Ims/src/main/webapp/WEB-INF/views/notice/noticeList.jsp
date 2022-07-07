@@ -49,6 +49,29 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
 /* 
+function ConvertSystemSourcetoHtml(str){
+	str = str.replace(/</g,"&lt;");
+	str = str.replace(/>/g,"&gt;");
+	str = str.replace(/\/g,"&quot;");
+	str = str.replace(/\/g,"&#39;");
+	str = str.replace(/\n/g,"<br />");
+	return str;
+	} */
+	
+	/* 
+function XSSCheck(str, level) {
+    if (level == undefined || level == 0) {
+        str = str.replace(/\<|\>|\"|\'|\%|\;|\(|\)|\&|\+|\-/g,"");
+    } else if (level != undefined && level == 1) {
+        str = str.replace(/\</g, "&lt;");
+        str = str.replace(/\>/g, "&gt;");
+    }
+    return str;
+}
+ */
+
+
+/* 
 $(function(){
 	$("#p_on").on("click", function(){
 		$("#s_off").show();
@@ -89,6 +112,8 @@ function dis1(){
 	}
 }
  */
+ 
+ 
 </script>
 </head>
 <body class="text-center">

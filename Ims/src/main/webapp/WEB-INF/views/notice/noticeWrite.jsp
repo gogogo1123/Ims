@@ -17,18 +17,7 @@
 <style>
 		
 </style>
-<script>
 
- 
-$(function(){
-	// 전송시 이벤트 처리
-	$("#frm").on('submit' , function(){
-		
-		
-	}
-	
-});/
-</script>
 <script src="https://kit.fontawesome.com/ea9f50e12b.js" crossorigin="anonymous"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
@@ -36,10 +25,10 @@ $(function(){
 		
 		$("#form").on('submit' , function(){
 			
-			var category = $("#category").val();
-			var title = $("#title").val();
-			var name = $("#name").val();
-			var content = $("#content").val();
+			let category = $("#category").val();
+			let title = $("#title").val();
+			let name = $("#name").val();
+			let content = $("#content").val();
 			
 			if(category  == ""){
 				alert("카테고리를 선택해주세요");

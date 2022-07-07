@@ -39,24 +39,23 @@
 		<!-- 페이징처리 : limit 0,10 -->
 	</select>
 	<!-- 글 보기 -->
-	<select id="getNoticeView" resultType="noticeVo" parameterType="int">
+	<select id="getNoticeView" resultType="noticeVo">
 		<![CDATA[
 		select n_title, n_content, member_name, n_bidx from b_notice where n_bidx=#{n_bidx}
 		]]>
 	</select>
 	
 	
-	<select id="getnoticeModify" resultType="noticeVo">
+	<update id="getnoticeModify" parameterType="int">
+		<!-- 
 		<![CDATA[
 		select n_title, n_content, member_name, n_bidx from b_notice where n_bidx=#{n_bidx}
 		]]>	
-	</select>
-	
-	
-	<update id="getNoticeModifyProcess" parameterType="noticeVo">
-		<![CDATA[
-		update b_notice SET n_title=#{n_title}, n_content=#{n_content}, n_bidx=#{n_bidx} where n_bidx=#{n_bidx}
+		 -->
+		 <![CDATA[
+		update b_notice SET n_title = ${n_title}, n_content = ${n_content} where n_bidx = ${n_bidx}
 		]]>
-		
 	</update>
+	
+	
 </mapper>
