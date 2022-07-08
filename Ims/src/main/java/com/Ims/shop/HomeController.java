@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 	
+
+	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
@@ -37,4 +39,26 @@ public class HomeController {
 		return "home";
 	}
 	
+		
+		
+		
+		/**
+		 * Simply selects the home view to render by returning its name.
+		 */
+		@RequestMapping(value = "/NewFile.do", method = RequestMethod.GET)
+		public String home2(Locale locale, Model model) {
+			
+			
+			
+			return "NewFile";
+}
+		
+		
+		
+		@RequestMapping("/cartlist")
+		public String cart() {
+			return "shop/cartlist";
+		}
+		
+		
 }

@@ -39,7 +39,7 @@ public ModelAndView login_check(MemberVo vo,HttpSession session,ModelAndView mav
 	String name = memberService.login(vo);
 	
 	if(name != null) { //로그인 성공
-		session.setAttribute("userid", vo.getUserid());
+		session.setAttribute("userid", vo.getMember_id());
 		session.setAttribute("name", name);
 		mav.setViewName("main");
 		mav.addObject("message", "success");

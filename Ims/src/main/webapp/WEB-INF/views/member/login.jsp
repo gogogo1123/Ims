@@ -37,7 +37,7 @@ return;
 
 }
 
-document.form1.action="/spring/member/login_check.do";
+document.form1.action="/shop/member/login_check.do";
 document.form1.submit();
 });
 
@@ -63,7 +63,7 @@ document.form1.submit();
 
 <td>아이디</td>
 
-<td><input id="userid" name="userid"></td>
+<td><input id="userid" name="member_id"></td>
 
 </tr>
 
@@ -71,7 +71,7 @@ document.form1.submit();
 
 <td>비밀번호</td>
 
-<td><input type="password" id="passwd" name="passwd">
+<td><input type="password" id="passwd" name="member_pw">
 
 </td>
 
