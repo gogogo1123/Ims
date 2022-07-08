@@ -55,14 +55,7 @@ public class HomeController {
 		
 		
 		
-		@RequestMapping("/cartlist")
-		public String cart() {
-
-			return "shop/cartlist";
-
-			return "shop/cart_list";
-
-		}
+	
 		
 		
 }
