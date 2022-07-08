@@ -24,7 +24,7 @@
 	<!-- 글 보기 -->
 	<select id="getNoticeView" resultType="noticeVo" parameterType="int">
 		<![CDATA[
-		select n_title, n_content, member_name, n_bidx from b_notice where n_bidx=#{n_bidx}
+		select n_title, n_content, member_name,n_bidx from b_notice where n_bidx=#{n_bidx}
 		]]>
 	</select>
 	

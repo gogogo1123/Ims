@@ -1,15 +1,12 @@
 package com.Ims.shop.service;
 
 import java.util.List;
-import java.util.Map;
-
-import javax.activation.CommandMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Ims.shop.dao.NoticeDao;
-import com.Ims.shop.vo.NoticeVo1;
+import com.Ims.shop.vo.NoticeVo;
 
 @Service
 public class NoticeService {
@@ -22,7 +19,7 @@ public class NoticeService {
 	}
 	
 	//글쓰기
-	public int addNotice(NoticeVo1 noticeVo) {
+	public int addNotice(NoticeVo noticeVo) {
 		int result = 0;	//글쓰기 실패
 		
 		result = noticeDao.addNotice(noticeVo);
@@ -32,26 +29,24 @@ public class NoticeService {
 	
 	
 	//리스트 보기
-	public List<NoticeVo1> selectNoticeList(){
+	public List<NoticeVo> selectNoticeList(){
+		
+		
 		
 		return noticeDao.selectNoticeList();
 	}
 	
 	//글상세페이지보기
-	public NoticeVo1 getNoticeView(Integer n_bidx) {
+	public NoticeVo getNoticeView(Integer n_bidx) {
 		return noticeDao.getNoticeView(n_bidx);
 	}
 	
 	//글수정
-	public NoticeVo1 getNoticeModify(int n_bidx) {
+	public NoticeVo getNoticeModify(Integer n_bidx) {
 	
 		
 		return noticeDao.getNoticeModify(n_bidx);
 		
 	}
 
-	public int getNoticeModifyProcess(NoticeVo1 noticeVo) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }

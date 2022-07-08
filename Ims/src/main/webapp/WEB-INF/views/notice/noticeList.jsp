@@ -148,7 +148,7 @@ function dis1(){
 
 						<tr id="show" onclick="dis4()">
 							<td>${nList.n_bidx }</td>
-							<td class="text-left"><a href="/shop/noticeView.do/${nList.n_bidx}">${nList.n_title}</a></td>
+							<td class="text-left"><a href="/shop/noticeMain.do/${nList.n_bidx}">${nList.n_title}</a></td>
 							<td>${nList.n_regdate }</td>
 						</tr>
 						<tr id="dis4" style="display:none"><!-- style="display:none"  ==  class="d-none"-->

@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.Ims.shop.vo.NoticeVo;
 import com.Ims.shop.vo.NoticeVo1;
 
 
@@ -24,19 +25,19 @@ public class NoticeDao {
 		this.sqlSession = sqlSession;
 	}
 	
-	public int addNotice(NoticeVo1 noticeVo) {
+	public int addNotice(NoticeVo noticeVo) {
 		return sqlSession.insert(MAPPER+".addNotice", noticeVo);
 	}
 	
-	public List<NoticeVo1> selectNoticeList(){
+	public List<NoticeVo> selectNoticeList(){
 		return sqlSession.selectList(MAPPER+".selectNoticeList");	
 	}
 
-	public NoticeVo1 getNoticeView(int n_bidx) {
+	public NoticeVo getNoticeView(int n_bidx) {
 		return sqlSession.selectOne(MAPPER+".getNoticeView", n_bidx);
 	}
 
-	public NoticeVo1 getNoticeModify(int n_bidx) {
+	public NoticeVo getNoticeModify(Integer n_bidx) {
 		return sqlSession.selectOne(MAPPER+".getNoticeModify", n_bidx);
 	}
 	
