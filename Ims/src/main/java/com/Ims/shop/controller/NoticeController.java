@@ -3,19 +3,16 @@ package com.Ims.shop.controller;
 
 import java.util.List;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.Ims.shop.service.NoticeService;
-import com.Ims.shop.vo.NoticeVo;
+import com.Ims.shop.vo.NoticeVo1;
 
 @Controller
 public class NoticeController {
@@ -28,40 +25,50 @@ public class NoticeController {
 		this.noticeService = noticeService;
 	}
 
-//	@RequestMapping("/noticeList") 
+
+//	@RequestMapping(value="/noticeList.do")
+//	
+//	public ModelAndView openNoticeList(CommandMap commandMap, Model model) throws Exception {
+//		
+//		ModelAndView mav = new ModelAndView("/notice/noticeList");
+//	
+//		List<Map<String, Object>> list = noticeService.selectNoticeList(commandMap);
+//		
+//		mav.addObject("list", list);		
+//		
+//		System.out.println("#####################mav########################" +mav);
+//	return mav;
+//	
+//	}
+
 	
-	  @GetMapping("/noticeList.do") 
-	  public String getNoticeList(Model model, HttpSession session) {
-	 
-	  // String member_idx = (String) session.getAttribute("member_idx");
-	  
-	  List<NoticeVo> noticeList = noticeService.getNoticeList();
-	  
-	  model.addAttribute("noticeList", noticeList);
-	 
-	  return "notice/noticeList"; }
-	 
+	
+	
+	//@GetMapping(value="/noticeList.do")
+	@RequestMapping("/noticeList.do")
+	public String openNoticeList(Model model) {
+		
+		//List<NoticeVo> NoticeList = noticeService.selectNoticeList();
+		
+		//List<NoticeVo> NoticeList = noticeService.selectNoticeList();
+		
+		model.addAttribute("NoticeList", noticeService.selectNoticeList());
+				
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>NoticeList : "+noticeService.selectNoticeList());
+		
+		return "notice/noticeList";
+	}
 
-	/*
-	 * @Resource(name="noticeService") private NoticeService noticeService;
-	 * 
-	 * @RequestMapping(value="/notice/noticeList")
-	 * public ModelAndView opennoticeList(CommandMap commandMap) throws Exception {
-	 * 
-	 * ModelAndView mav = new ModelAndView("/notice/noticeList");
-	 * 
-	 * List<Map<String,Object>> list = noticeService.selectNoticeList(commandMap);
-	 * mav.addObject("list", list); return mav; }
-	 */
 
-	@RequestMapping("noticeView.do") // noticeView.do? n_bidx= ${noticeVo.n_bidx} 에서
-										// ㄴ해당 부분을 없애고
+	
+	@RequestMapping("noticeView.do/{n_bidx}") // noticeView.do? n_bidx= ${noticeVo.n_bidx} 에서
+										// ?뒤에 n_bidx= 해당 부분을 없애고
 										// /로 대체할 수 있다.
 										// 그 후 Controller에서 "noticeView.do" 를
 										// "noticeView.do/{n_bidx}" 로 변경하였음
 
 	// public String getNoticeView(Model model, NoticeVo noticeVo) {//원래 있던것
-	public String getNoticeView(Integer n_bidx, Model model) { // 내가 수정한것
+	public String getNoticeView(@PathVariable("n_bidx") Integer n_bidx, Model model) { // 내가 수정한것
 		model.addAttribute("noticeView", noticeService.getNoticeView(n_bidx));
 
 		return "notice/noticeView";
@@ -74,7 +81,7 @@ public class NoticeController {
 	}
 
 	@RequestMapping("/noticeWriteProcess.do")
-	public String addNotice(NoticeVo noticeVo) {
+	public String addNotice(NoticeVo1 noticeVo) {
 		// 요청매핑이 있는 메소드의 매개변수에 Vo나 자바클래스가 있는 경우 전달된 값을 그 객체에 매핑시켜줌
 		// 이러한 객체를 커맨드 객체라고 함.
 		int result = noticeService.addNotice(noticeVo);
@@ -104,14 +111,8 @@ public class NoticeController {
 		return "notice/noticeModify";
 	}
 	
-	/*
-	 * @RequestMapping("/notice.do") public String notice() { return
-	 * "notice/notice"; }
-	 */
-	
-
 	@RequestMapping("/noticeModifyProcess.do")
-	public String getNoticeModifyProcess(NoticeVo noticeVo) {
+	public String getNoticeModifyProcess(NoticeVo1 noticeVo) {
 		// 요청매핑이 있는 메소드의 매개변수에 Vo나 자바클래스가 있는 경우 전달된 값을 그 객체에 매핑시켜줌
 		// 이러한 객체를 커맨드 객체라고 함.
 		int result = noticeService.getNoticeModifyProcess(noticeVo);

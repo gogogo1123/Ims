@@ -2,7 +2,7 @@ package com.Ims.shop.vo;
 
 import java.util.Date;
 
-public class NoticeVo {
+public class NoticeVo1 {
 	
 	private int n_bidx;
 	private String n_title;

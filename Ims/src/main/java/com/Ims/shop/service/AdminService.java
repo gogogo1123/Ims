@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.Ims.shop.dao.AdminDao;
 import com.Ims.shop.dao.NoticeDao;
 import com.Ims.shop.vo.MemberVo;
-import com.Ims.shop.vo.NoticeVo;
+import com.Ims.shop.vo.NoticeVo1;
 
 @Service
 public class AdminService {

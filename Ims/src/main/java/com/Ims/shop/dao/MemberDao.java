@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.Ims.shop.vo.MemberVo;
-import com.Ims.shop.vo.NoticeVo;
+import com.Ims.shop.vo.NoticeVo1;
 
 @Repository
 public class MemberDao {

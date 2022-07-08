@@ -14,7 +14,7 @@
 	</insert>
 	
 	<!-- 갤러리 리스트 불러오는 sql문 -->
-	<select id="getNoticeList" resultType="noticeVo">
+	<select id="selectNoticeList" resultType="list">
 		<!-- 
 		<![CDATA[
 		select n_bidx, n_title, n_content, if(
@@ -24,11 +24,7 @@
 		) as n_regdate, n_delyn, n_origin_filename, n_system_filename, ct_idx, member_name from b_notice order by n_bidx desc
 		]]>
 		 -->
-		 <!--    
-		<![CDATA[
-		select n_bidx, n_title, n_content, n_regdate, n_delyn, n_origin_filename, n_system_filename, ct_idx, member_name from b_notice order by n_bidx desc
-		]]>
-		 -->
+		
 		<![CDATA[
 		select * from b_notice order by n_bidx desc
 		]]>
