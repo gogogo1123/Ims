@@ -41,9 +41,9 @@ public class AdminController {
 	   String name = adminService.login(vo);
 	   
 	   if(name != null) {
-		   session.setAttribute("admin_userid", vo.getUserid());
+		   session.setAttribute("admin_userid", vo.getMember_id());
 		   session.setAttribute("admin_name", name);
-		   session.setAttribute("userid", vo.getUserid());
+		   session.setAttribute("userid", vo.getMember_id());
 		   session.setAttribute("name", name);
 		   
 		   mav.setViewName("admin/admin");
